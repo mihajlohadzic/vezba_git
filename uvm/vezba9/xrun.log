@@ -1,0 +1,244 @@
+xrun(64): 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	19.03-s013: Started on Jun 06, 2022 at 13:42:05 CEST
+xrun
+	-f v9_run.f
+		-uvmhome /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2/
+		-uvm
+		+UVM_TESTNAME=test_simple
+		-sv
+		+incdir+./verif
+		-sv
+		+incdir+./verif/Agent
+		-sv
+		+incdir+./verif/Sequences
+		-sv
+		+incdir+./verif/Configurations
+		./dut/alu_input_stage.v
+		./dut/alu_output_stage.v
+		./dut/exdbin_mac.v
+		./dut/holdreg.v
+		./dut/mux_out.v
+		./dut/shifter.v
+		./dut/priority.v
+		./dut/calc_top.v
+		-sv
+		./verif/Configurations/configurations_pkg.sv
+		-sv
+		./verif/Agent/v9_calc_agent_pkg.sv
+		-sv
+		./verif/Sequences/v9_calc_seq_pkg.sv
+		-sv
+		./verif/v9_calc_test_pkg.sv
+		-sv
+		./verif/calc_if.sv
+		-sv
+		./verif/v9_calc_verif_top.sv
+		-access +rwc
+		-disable_sem2009
+		-nowarn MEMODR
+		-timescale 1ns/10ps
+	-gui
+	-s
+Recompiling... reason: file './verif/v9_calc_env.sv' is newer than expected.
+	expected: Mon Jun  6 14:38:02 2022
+	actual:   Mon Jun  6 14:41:27 2022
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2/
+file: ./verif/Agent/v9_calc_agent_pkg.sv
+	constraint op1_constraint {operand1 < 10;};
+	                                          |
+xmvlog: *W,UEXPSC (./verif/Agent/v9_calc_seq_item.sv,36|43): Ignored unexpected semicolon following SystemVerilog description keyword (constraint).
+(`include file: ./verif/Agent/v9_calc_seq_item.sv line 36, file: ./verif/Agent/v9_calc_agent_pkg.sv line 14)
+	constraint op2_constraint {operand2 < 10;};
+	                                          |
+xmvlog: *W,UEXPSC (./verif/Agent/v9_calc_seq_item.sv,37|43): Ignored unexpected semicolon following SystemVerilog description keyword (constraint).
+(`include file: ./verif/Agent/v9_calc_seq_item.sv line 37, file: ./verif/Agent/v9_calc_agent_pkg.sv line 14)
+	constraint op3_constraint {operand3 < 10;};
+	                                          |
+xmvlog: *W,UEXPSC (./verif/Agent/v9_calc_seq_item.sv,38|43): Ignored unexpected semicolon following SystemVerilog description keyword (constraint).
+(`include file: ./verif/Agent/v9_calc_seq_item.sv line 38, file: ./verif/Agent/v9_calc_agent_pkg.sv line 14)
+	constraint op4_constraint {operand4 < 10;};
+	                                          |
+xmvlog: *W,UEXPSC (./verif/Agent/v9_calc_seq_item.sv,39|43): Ignored unexpected semicolon following SystemVerilog description keyword (constraint).
+(`include file: ./verif/Agent/v9_calc_seq_item.sv line 39, file: ./verif/Agent/v9_calc_agent_pkg.sv line 14)
+file: ./verif/v9_calc_test_pkg.sv
+	package worklib.calc_test_pkg:sv
+		errors: 0, warnings: 0
+file: ./verif/v9_calc_verif_top.sv
+	module worklib.calc_verif_top:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		configurations_pkg
+		calc_agent_pkg
+		calc_seq_pkg
+		calc_test_pkg
+		calc_verif_top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.uvm_pkg:sv <0x5f0ca3ad>
+			streams:  24, words: 29991
+		worklib.uvm_pkg:sv <0x0980fa94>
+			streams:  23, words: 24462
+		worklib.calc_test_pkg:sv <0x237c6c3c>
+			streams:  24, words: 27009
+		worklib.uvm_pkg:sv <0x67a3d475>
+			streams:  23, words: 46503
+		worklib.uvm_pkg:sv <0x6daf6c4a>
+			streams:  93, words: 186123
+		worklib.uvm_pkg:sv <0x100c38ad>
+			streams:  25, words: 61841
+		worklib.uvm_pkg:sv <0x2b2d1e87>
+			streams:  48, words: 51381
+		worklib.calc_verif_top:sv <0x769616c2>
+			streams:  91, words: 133943
+		worklib.calc_test_pkg:sv <0x50621576>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                      17       9
+		Interfaces:                    4       1
+		Verilog packages:              8       8
+		Registers:                 16757   11756
+		Scalar wires:               1186       -
+		Expanded wires:              396      14
+		Vectored wires:               75       -
+		Named events:                  4      12
+		Always blocks:                11       5
+		Initial blocks:              338     168
+		Parallel blocks:              36      31
+		Cont. assignments:           167    1149
+		Pseudo assignments:           18      18
+		Assertions:                    5       5
+		SV Class declarations:       235     351
+		SV Class specializations:    450     450
+		Simulation timescale:       10ps
+	Writing initial simulation snapshot: worklib.calc_verif_top:sv
+xmsim: *W,XCLGNOPTM: The SystemVerilog constraint solver Xceligen options 'seed_only_rand and process_alternate_rng and ignore_worklib_name' are not specified and will default to 0. The recommended value for each of them is 1 which will become the default in a future release.
+SVSEED default: 1
+xmsim: *W,RNDXCELON: Xceligen, the new SystemVerilog constraint solver is used. Disabling Xceligen and using the legacy constraint solver is possible with "xrun/xmsim -xceligen on=0 ...".
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/xcelium/files/xmsimrc
+xcelium> source /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2//additions/sv/files/tcl/uvm_sim.tcl
+xcelium> # Restoring simulation environment...
+xcelium> input -quiet .reinvoke.sim
+xcelium> file delete .reinvoke.sim
+xcelium> run
+UVM_INFO /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2//sv/src/base/uvm_root.svh(412) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+CDNS-UVM-1.2 (19.03-s013)
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test test_simple...
+UVM_INFO /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2//sv/src/base/uvm_root.svh(605) @ 0: reporter [UVMTOP] UVM testbench topology:
+----------------------------------------------------------------------
+Name                         Type                     Size  Value     
+----------------------------------------------------------------------
+uvm_test_top                 test_simple              -     @2016     
+  env                        calc_env                 -     @2098     
+    agent1                   calc_agent               -     @2238     
+      drv                    calc_driver              -     @2464     
+        rsp_port             uvm_analysis_port        -     @2568     
+        seq_item_port        uvm_seq_item_pull_port   -     @2516     
+      mon                    calc_monitor             -     @2244     
+        item_collected_port  uvm_analysis_port        -     @2432     
+        checks_enable        integral                 1     'h1       
+        coverage_enable      integral                 1     'h1       
+      seqr                   calc_sequencer           -     @2547     
+        rsp_export           uvm_analysis_export      -     @2660     
+        seq_item_export      uvm_seq_item_pull_imp    -     @3220     
+        arbitration_queue    array                    0     -         
+        lock_queue           array                    0     -         
+        num_last_reqs        integral                 32    'd1       
+        num_last_rsps        integral                 32    'd1       
+      cfg                    calc_config              -     @2082     
+        is_active            uvm_active_passive_enum  1     UVM_ACTIVE
+    agent2                   calc_agent               -     @2275     
+      drv                    calc_driver              -     @3313     
+        rsp_port             uvm_analysis_port        -     @3460     
+        seq_item_port        uvm_seq_item_pull_port   -     @3411     
+      mon                    calc_monitor             -     @3279     
+        item_collected_port  uvm_analysis_port        -     @3332     
+        checks_enable        integral                 1     'h1       
+        coverage_enable      integral                 1     'h1       
+      seqr                   calc_sequencer           -     @3441     
+        rsp_export           uvm_analysis_export      -     @3548     
+        seq_item_export      uvm_seq_item_pull_imp    -     @4100     
+        arbitration_queue    array                    0     -         
+        lock_queue           array                    0     -         
+        num_last_reqs        integral                 32    'd1       
+        num_last_rsps        integral                 32    'd1       
+      cfg                    calc_config              -     @2082     
+        is_active            uvm_active_passive_enum  1     UVM_ACTIVE
+    agent3                   calc_agent               -     @2306     
+      drv                    calc_driver              -     @4186     
+        rsp_port             uvm_analysis_port        -     @4333     
+        seq_item_port        uvm_seq_item_pull_port   -     @4284     
+      mon                    calc_monitor             -     @4153     
+        item_collected_port  uvm_analysis_port        -     @4205     
+        checks_enable        integral                 1     'h1       
+        coverage_enable      integral                 1     'h1       
+      seqr                   calc_sequencer           -     @4314     
+        rsp_export           uvm_analysis_export      -     @4421     
+        seq_item_export      uvm_seq_item_pull_imp    -     @4973     
+        arbitration_queue    array                    0     -         
+        lock_queue           array                    0     -         
+        num_last_reqs        integral                 32    'd1       
+        num_last_rsps        integral                 32    'd1       
+      cfg                    calc_config              -     @2082     
+        is_active            uvm_active_passive_enum  1     UVM_ACTIVE
+    agent4                   calc_agent               -     @2337     
+      drv                    calc_driver              -     @5059     
+        rsp_port             uvm_analysis_port        -     @5206     
+        seq_item_port        uvm_seq_item_pull_port   -     @5157     
+      mon                    calc_monitor             -     @5008     
+        item_collected_port  uvm_analysis_port        -     @5078     
+        checks_enable        integral                 1     'h1       
+        coverage_enable      integral                 1     'h1       
+      seqr                   calc_sequencer           -     @5187     
+        rsp_export           uvm_analysis_export      -     @5294     
+        seq_item_export      uvm_seq_item_pull_imp    -     @5846     
+        arbitration_queue    array                    0     -         
+        lock_queue           array                    0     -         
+        num_last_reqs        integral                 32    'd1       
+        num_last_rsps        integral                 32    'd1       
+      cfg                    calc_config              -     @2082     
+        is_active            uvm_active_passive_enum  1     UVM_ACTIVE
+----------------------------------------------------------------------
+
+SDI/Verilog Transaction Recording Facility Version 19.03-s013
+stop -create -name Randomize -randomize
+Created stop Randomize
+
+xmsim: *E,ASRTST (./verif/Agent/v9_calc_monitor.sv,54): (time 850 NS) Assertion worklib.calc_agent_pkg::calc_monitor@3279_19.main_phase.lijlkj has failed 
+850 NS + 1 (Assertion output stop: worklib.calc_agent_pkg::calc_monitor@3279_19.main_phase.lijlkj = failed)
+UVM_ERROR ./verif/Agent/v9_calc_monitor.sv(57) @ 85000: uvm_test_top.env.agent2.mon [calc_monitor] Greska
+xcelium> ^C
+xcelium> exit
+TOOL:	xrun(64)	19.03-s013: Exiting on Jun 06, 2022 at 13:46:07 CEST  (total: 00:04:02)

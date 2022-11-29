@@ -1,0 +1,14 @@
+1637214311 /nethome/mihajlo.hadzic/cds.lib
+1556863837 /nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/dut/alu_input_stage.v
+1589230707 /nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/dut/alu_output_stage.v
+1589472647 /nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/dut/exdbin_mac.v
+1589469198 /nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/dut/holdreg.v
+1589230707 /nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/dut/mux_out.v
+1556863837 /nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/dut/shifter.v
+1651234102 /nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/dut/priority.v
+1651234097 /nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/dut/calc_top.v
+1653309205 /nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/verif/Agent/v7_calc_agent_pkg.sv
+1586776511 /nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/verif/Sequences/v7_calc_seq_pkg.sv
+1586776484 /nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/verif/v7_calc_test_pkg.sv
+1586775987 /nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/verif/calc_if.sv
+1653310296 /nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/verif/v7_calc_verif_top.sv

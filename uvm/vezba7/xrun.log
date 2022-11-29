@@ -1,0 +1,135 @@
+xrun(64): 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	19.03-s013: Started on May 30, 2022 at 12:48:52 CEST
+xrun
+	-f v7_run.f
+		-uvmhome /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2/
+		-uvm
+		+UVM_TESTNAME=test_simple
+		+UVM_VERBOSITY=UVM_HIGH
+		-sv
+		+incdir+./verif
+		-sv
+		+incdir+./verif/Agent
+		-sv
+		+incdir+./verif/Sequences
+		./dut/alu_input_stage.v
+		./dut/alu_output_stage.v
+		./dut/exdbin_mac.v
+		./dut/holdreg.v
+		./dut/mux_out.v
+		./dut/shifter.v
+		./dut/priority.v
+		./dut/calc_top.v
+		-sv
+		./verif/Agent/v7_calc_agent_pkg.sv
+		-sv
+		./verif/Sequences/v7_calc_seq_pkg.sv
+		-sv
+		./verif/v7_calc_test_pkg.sv
+		-sv
+		./verif/calc_if.sv
+		-sv
+		./verif/v7_calc_verif_top.sv
+		-access +rwc
+		-disable_sem2009
+		-nowarn MEMODR
+		-timescale 1ns/10ps
+	-gui
+	-s
+
+   User defined plus("+") options:
+	+UVM_VERBOSITY=UVM_HIGH
+
+xmsim: *W,XCLGNOPTM: The SystemVerilog constraint solver Xceligen options 'seed_only_rand and process_alternate_rng and ignore_worklib_name' are not specified and will default to 0. The recommended value for each of them is 1 which will become the default in a future release.
+SVSEED default: 1
+xmsim: *W,RNDXCELON: Xceligen, the new SystemVerilog constraint solver is used. Disabling Xceligen and using the legacy constraint solver is possible with "xrun/xmsim -xceligen on=0 ...".
+xcelium> 
+xcelium> 
+-------------------------------------
+Relinquished control to SimVision...
+source /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/xcelium/files/xmsimrc
+xcelium> source /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2//additions/sv/files/tcl/uvm_sim.tcl
+xcelium> # Restoring simulation environment...
+xcelium> input -quiet .reinvoke.sim
+xcelium> file delete .reinvoke.sim
+xcelium> run
+UVM_INFO /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2//sv/src/base/uvm_root.svh(412) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+CDNS-UVM-1.2 (19.03-s013)
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test test_simple...
+SDI/Verilog Transaction Recording Facility Version 19.03-s013
+UVM_INFO ./verif/Agent/v7_calc_driver.sv(27) @ 205000: uvm_test_top.drv [calc_driver] Driver sending...
+--------------------------------------------------------------------------------
+Name                           Type           Size  Value                       
+--------------------------------------------------------------------------------
+calc_it                        calc_seq_item  -     @2954                       
+  begin_time                   time           64    205000                      
+  depth                        int            32    'd2                         
+  parent sequence (name)       string         10    simple_seq                  
+  parent sequence (full name)  string         28    uvm_test_top.seqr.simple_seq
+  sequencer                    string         17    uvm_test_top.seqr           
+--------------------------------------------------------------------------------
+
+UVM_INFO ./verif/Agent/v7_calc_monitor.sv(54) @ 245000: uvm_test_top.mon [calc_monitor] Provera uspesna exp_output = out_data1 
+UVM_INFO ./verif/Agent/v7_calc_driver.sv(27) @ 295000: uvm_test_top.drv [calc_driver] Driver sending...
+--------------------------------------------------------------------------------
+Name                           Type           Size  Value                       
+--------------------------------------------------------------------------------
+calc_it                        calc_seq_item  -     @2954                       
+  begin_time                   time           64    295000                      
+  depth                        int            32    'd2                         
+  parent sequence (name)       string         10    simple_seq                  
+  parent sequence (full name)  string         28    uvm_test_top.seqr.simple_seq
+  sequencer                    string         17    uvm_test_top.seqr           
+--------------------------------------------------------------------------------
+
+UVM_INFO ./verif/Agent/v7_calc_monitor.sv(54) @ 335000: uvm_test_top.mon [calc_monitor] Provera uspesna exp_output = out_data1 
+UVM_INFO ./verif/Agent/v7_calc_driver.sv(27) @ 385000: uvm_test_top.drv [calc_driver] Driver sending...
+--------------------------------------------------------------------------------
+Name                           Type           Size  Value                       
+--------------------------------------------------------------------------------
+calc_it                        calc_seq_item  -     @2954                       
+  begin_time                   time           64    385000                      
+  depth                        int            32    'd2                         
+  parent sequence (name)       string         10    simple_seq                  
+  parent sequence (full name)  string         28    uvm_test_top.seqr.simple_seq
+  sequencer                    string         17    uvm_test_top.seqr           
+--------------------------------------------------------------------------------
+
+UVM_INFO ./verif/Agent/v7_calc_monitor.sv(54) @ 425000: uvm_test_top.mon [calc_monitor] Provera uspesna exp_output = out_data1 
+UVM_INFO ./verif/Agent/v7_calc_driver.sv(27) @ 475000: uvm_test_top.drv [calc_driver] Driver sending...
+--------------------------------------------------------------------------------
+Name                           Type           Size  Value                       
+--------------------------------------------------------------------------------
+calc_it                        calc_seq_item  -     @2954                       
+  begin_time                   time           64    475000                      
+  depth                        int            32    'd2                         
+  parent sequence (name)       string         10    simple_seq                  
+  parent sequence (full name)  string         28    uvm_test_top.seqr.simple_seq
+  sequencer                    string         17    uvm_test_top.seqr           
+--------------------------------------------------------------------------------
+
+UVM_INFO ./verif/Agent/v7_calc_monitor.sv(54) @ 515000: uvm_test_top.mon [calc_monitor] Provera uspesna exp_output = out_data1 
+Simulation interrupted at 70671750 NS + 1
+xcelium> ^C
+xcelium> exit
+TOOL:	xrun(64)	19.03-s013: Exiting on May 30, 2022 at 12:59:45 CEST  (total: 00:10:53)

@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-ACCESS
++rwc
+-DISABLE_SEM2009
+-timescale
+1ns/10ps

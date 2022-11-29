@@ -1,0 +1,39 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-INPUT
+"@source /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2//additions/sv/files/tcl/uvm_sim.tcl"
++incdir+./verif
++incdir+./verif/Agent
++incdir+./verif/Sequences
++incdir+./verif/Configurations
+-uvmhome
+/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2/
+-sv_lib
+/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2//additions/sv/lib/64bit/libuvmpli.so
++UVM_TESTNAME=test_simple
+-NOWARN
+MEMODR
+-gui
+-MESSAGES
+-SV_LIB
+/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2//additions/sv/lib/64bit/libuvmdpi.so
++EMGRLOG
+xrun.log
+-XLSTIME
+1654509621
+-XLKEEP
+-XLMODE
+./xcelium.d/run.lnx8664.19.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx8664.19.03.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.19.03.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun(64)	19.03-s013"
+-XLNAME
+./xcelium.d/run.lnx8664.19.03.d/ws2.lab107.kel.net_8893

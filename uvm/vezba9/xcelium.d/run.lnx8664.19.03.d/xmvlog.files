@@ -1,0 +1,18 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba9/dut/alu_input_stage.v
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba9/dut/alu_output_stage.v
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba9/dut/exdbin_mac.v
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba9/dut/holdreg.v
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba9/dut/mux_out.v
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba9/dut/shifter.v
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba9/dut/priority.v
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba9/dut/calc_top.v
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba9/verif/Configurations/configurations_pkg.sv
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba9/verif/Agent/v9_calc_agent_pkg.sv
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba9/verif/Sequences/v9_calc_seq_pkg.sv
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba9/verif/v9_calc_test_pkg.sv
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba9/verif/calc_if.sv
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba9/verif/v9_calc_verif_top.sv

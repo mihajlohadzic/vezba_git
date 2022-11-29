@@ -1,0 +1,8 @@
+define XMSIMRC	( /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
+include ./hdlrun.var
+define SNAPSHOT worklib.calc_verif_top:sv
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP (  => worklib )
+DEFINE LIB_MAP ($LIB_MAP, + => worklib )
+define ELAB_SNAPSHOT
+define SNAPSHOT worklib.calc_verif_top:sv

@@ -1,0 +1,127 @@
+
+#
+# Preferences
+#
+preferences set plugin-enable-svdatabrowser-new 1
+preferences set toolbar-sendToIndago-WaveWindow {
+  usual
+  position -pos 1
+}
+preferences set toolbar-Standard-Console {
+  usual
+  position -pos 1
+}
+preferences set toolbar-Search-Console {
+  usual
+  position -pos 2
+}
+preferences set plugin-enable-groupscope 0
+preferences set plugin-enable-interleaveandcompare 0
+preferences set plugin-enable-waveformfrequencyplot 0
+
+#
+# Mnemonic Maps
+#
+mmap new  -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+#
+# Waveform windows
+#
+if {[catch {window new WaveWindow -name "Waveform 3" -geometry 1920x977+-1+27}] != ""} {
+    window geometry "Waveform 3" 1920x977+-1+27
+}
+window target "Waveform 3" on
+waveform using {Waveform 3}
+waveform sidebar visibility partial
+waveform set \
+    -primarycursor TimeA \
+    -signalnames name \
+    -signalwidth 175 \
+    -units ps \
+    -valuewidth 75
+waveform baseline set -time 0
+
+set id [waveform add -signals  {
+	simulator::calc_verif_top.calc_vif.CMD_WIDTH
+	} ]
+set id [waveform add -signals  {
+	simulator::calc_verif_top.calc_vif.DATA_WIDTH
+	} ]
+set id [waveform add -signals  {
+	simulator::calc_verif_top.calc_vif.RESP_WIDTH
+	} ]
+set id [waveform add -signals  {
+	simulator::calc_verif_top.calc_vif.clk
+	} ]
+set id [waveform add -signals  {
+	{simulator::calc_verif_top.calc_vif.out_data1[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::calc_verif_top.calc_vif.out_data2[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::calc_verif_top.calc_vif.out_data3[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::calc_verif_top.calc_vif.out_data4[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::calc_verif_top.calc_vif.out_resp1[1:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::calc_verif_top.calc_vif.out_resp2[1:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::calc_verif_top.calc_vif.out_resp3[1:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::calc_verif_top.calc_vif.out_resp4[1:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::calc_verif_top.calc_vif.req1_cmd_in[3:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::calc_verif_top.calc_vif.req1_data_in[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::calc_verif_top.calc_vif.req2_cmd_in[3:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::calc_verif_top.calc_vif.req2_data_in[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::calc_verif_top.calc_vif.req3_cmd_in[3:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::calc_verif_top.calc_vif.req3_data_in[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::calc_verif_top.calc_vif.req4_cmd_in[3:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::calc_verif_top.calc_vif.req4_data_in[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::calc_verif_top.calc_vif.rst[6:0]}
+	} ]
+
+waveform xview limits 0 8626922.608ps
+
+#
+# Waveform Window Links
+#
+
+#
+# Console windows
+#
+console set -windowname Console
+window geometry Console 730x250+261+564
+
+#
+# Layout selection
+#

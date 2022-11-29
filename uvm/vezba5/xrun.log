@@ -1,0 +1,247 @@
+xrun(64): 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	19.03-s013: Started on Apr 11, 2022 at 13:34:20 CEST
+xrun
+	-f build_file.f
+		+incdir+dut/
+		dut/shifter.v
+		dut/priority.v
+		dut/mux_out.v
+		dut/holdreg.v
+		dut/exdbin_mac.v
+		dut/calc_top.v
+		dut/alu_output_stage.v
+		dut/alu_input_stage.v
+		verif/Agent/v5_calc_agent_pkg.sv
+		verif/Agent/v5_calc_seq_item.sv
+		verif/calc_if.sv
+		verif/v5_calc_test_pkg.sv
+		verif/v5_calc_test_simple.sv
+		verif/v5_calc_verif_top.sv
+		-uvm
+		+eda/cadence/2017-18/RHELx86/INCISIVE_15.20.038/tools/methodology/UVM/CDNS-1.2/sv/src
+		-gui
+		-access +rwc
+
+   User defined plus("+") options:
+	+eda/cadence/2017-18/RHELx86/INCISIVE_15.20.038/tools/methodology/UVM/CDNS-1.2/sv/src
+
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d
+file: dut/calc_top.v
+	module worklib.alu_input_stage:v
+		errors: 0, warnings: 0
+	module worklib.alu_output_stage:v
+		errors: 0, warnings: 0
+module exdbin_mac (bin_ovfl, bin_sum, alu_cmd, fxu_areg_q, local_error_found, fxu_breg_q);
+                |
+xmvlog: *W,RECOME (dut//exdbin_mac.v,5|16): recompiling design unit worklib.exdbin_mac:v.
+	First compiled from line 5 of dut/exdbin_mac.v.
+(`include file: dut//exdbin_mac.v line 5, file: dut/calc_top.v line 7)
+xmvlog: *E,DUPUNI: Unit "worklib.exdbin_mac:v" multiply defined in files "dut/exdbin_mac.v" and "dut/calc_top.v".
+xmvlog: *E,MNPDEC: Module name (exdbin_mac) previously declared. Use -ALLOWREDEFINITION option for duplicate module names.
+ module holdreg(hold_data1, hold_data2, hold_prio_req, c_clk, req_cmd_in, req_data_in, reset);
+              |
+xmvlog: *W,RECOME (dut//holdreg.v,5|14): recompiling design unit worklib.holdreg:v.
+	First compiled from line 5 of dut/holdreg.v.
+(`include file: dut//holdreg.v line 5, file: dut/calc_top.v line 8)
+xmvlog: *E,DUPUNI: Unit "worklib.holdreg:v" multiply defined in files "dut/holdreg.v" and "dut/calc_top.v".
+xmvlog: *E,MNPDEC: Module name (holdreg) previously declared. Use -ALLOWREDEFINITION option for duplicate module names.
+module mux_out(req_data, req_resp, req_data1, req_data2, req_resp1, req_resp2);
+             |
+xmvlog: *W,RECOME (dut//mux_out.v,5|13): recompiling design unit worklib.mux_out:v.
+	First compiled from line 5 of dut/mux_out.v.
+(`include file: dut//mux_out.v line 5, file: dut/calc_top.v line 9)
+xmvlog: *E,DUPUNI: Unit "worklib.mux_out:v" multiply defined in files "dut/mux_out.v" and "dut/calc_top.v".
+xmvlog: *E,MNPDEC: Module name (mux_out) previously declared. Use -ALLOWREDEFINITION option for duplicate module names.
+module priority ( prio_alu1_in_cmd, prio_alu1_in_req_id, prio_alu1_out_req_id, prio_alu1_out_vld, prio_alu2_in_cmd, prio_alu2_in_req_id, prio_alu2_out_req_id, prio_alu2_out_vld, c_clk, hold1_prio_req, hold2_prio_req, hold3_prio_req, hold4_prio_req, local_error_found, reset);
+              |
+xmvlog: *W,RECOME (dut//priority.v,5|14): recompiling design unit worklib.priority:v.
+	First compiled from line 5 of dut/priority.v.
+(`include file: dut//priority.v line 5, file: dut/calc_top.v line 10)
+xmvlog: *E,DUPUNI: Unit "worklib.priority:v" multiply defined in files "dut/priority.v" and "dut/calc_top.v".
+xmvlog: *E,MNPDEC: Module name (priority) previously declared. Use -ALLOWREDEFINITION option for duplicate module names.
+module shifter ( bin_ovfl, shift_out, shift_cmd, shift_places, local_error_found, shift_val);
+             |
+xmvlog: *W,RECOME (dut//shifter.v,5|13): recompiling design unit worklib.shifter:v.
+	First compiled from line 5 of dut/shifter.v.
+(`include file: dut//shifter.v line 5, file: dut/calc_top.v line 11)
+xmvlog: *E,DUPUNI: Unit "worklib.shifter:v" multiply defined in files "dut/shifter.v" and "dut/calc_top.v".
+xmvlog: *E,MNPDEC: Module name (shifter) previously declared. Use -ALLOWREDEFINITION option for duplicate module names.
+	module worklib.calc_top:v
+		errors: 0, warnings: 0
+file: dut/alu_output_stage.v
+module alu_output_stage(out_data1, out_data2, out_data3, out_data4, out_resp1, out_resp2, out_resp3, out_resp4, c_clk,alu_overflow, alu_result,  local_error_found, prio_alu_out_req_id, prio_alu_out_vld, reset);
+                      |
+xmvlog: *W,RECOME (dut/alu_output_stage.v,5|22): recompiling design unit worklib.alu_output_stage:v.
+	First compiled from line 5 of dut//alu_output_stage.v.
+xmvlog: *E,DUPUNI: Unit "worklib.alu_output_stage:v" multiply defined in files "dut/calc_top.v" and "dut/alu_output_stage.v".
+xmvlog: *E,MNPDEC: Module name (alu_output_stage) previously declared. Use -ALLOWREDEFINITION option for duplicate module names.
+file: dut/alu_input_stage.v
+module alu_input_stage (alu_data1, alu_data2, hold1_data1, hold1_data2, hold2_data1, hold2_data2, hold3_data1, hold3_data2, hold4_data1, hold4_data2, prio_alu_in_cmd, prio_alu_in_req_id);
+                     |
+xmvlog: *W,RECOME (dut/alu_input_stage.v,5|21): recompiling design unit worklib.alu_input_stage:v.
+	First compiled from line 5 of dut//alu_input_stage.v.
+xmvlog: *E,DUPUNI: Unit "worklib.alu_input_stage:v" multiply defined in files "dut/calc_top.v" and "dut/alu_input_stage.v".
+xmvlog: *E,MNPDEC: Module name (alu_input_stage) previously declared. Use -ALLOWREDEFINITION option for duplicate module names.
+file: verif/Agent/v5_calc_agent_pkg.sv
+  `include "v5_calc_seq_item.sv"
+                               |
+xmvlog: *E,COFILX (verif/Agent/v5_calc_agent_pkg.sv,12|31): cannot open include file 'v5_calc_seq_item.sv'.
+	package worklib.calc_agent_pkg:sv
+		errors: 1, warnings: 0
+file: verif/Agent/v5_calc_seq_item.sv
+class calc_seq_item extends uvm_sequence_item;
+                                            |
+xmvlog: *E,SVNOTY (verif/Agent/v5_calc_seq_item.sv,4|44): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,SVNOTY (verif/Agent/v5_calc_seq_item.sv,6|40): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: m_uvm_object_registry_internal [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,SVEXTK (verif/Agent/v5_calc_seq_item.sv,6|40): expecting a ';' (to terminate a type_declaration).
+(`define macro: m_uvm_object_registry_internal [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,SVEXTK (verif/Agent/v5_calc_seq_item.sv,6|40): expecting a ';' (to terminate a type_declaration).
+(`define macro: m_uvm_object_registry_internal [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,SVNOTY (verif/Agent/v5_calc_seq_item.sv,6|40): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: m_uvm_object_registry_internal [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,EXPSMC (verif/Agent/v5_calc_seq_item.sv,6|40): expecting a semicolon (';') [10.3.1(IEEE)].
+(`define macro: m_uvm_object_registry_internal [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,SVNOTY (verif/Agent/v5_calc_seq_item.sv,6|40): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: m_uvm_object_registry_internal [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,EXPSMC (verif/Agent/v5_calc_seq_item.sv,6|40): expecting a semicolon (';') [10.3.1(IEEE)].
+(`define macro: m_uvm_object_registry_internal [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,SVNOTY (verif/Agent/v5_calc_seq_item.sv,6|40): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: m_uvm_object_create_func [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 409], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,EXPSMC (verif/Agent/v5_calc_seq_item.sv,6|40): expecting a semicolon (';') [10.3.1(IEEE)].
+(`define macro: m_uvm_object_create_func [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 409], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,NOIPRT (verif/Agent/v5_calc_seq_item.sv,6|40): Unrecognized declaration 'calc_seq_item' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+(`define macro: m_uvm_object_create_func [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 409], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,NOTINF (verif/Agent/v5_calc_seq_item.sv,6|40): Interfaces are not allowed within functions [SystemVerilog].
+(`define macro: m_uvm_object_create_func [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 409], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,SVNOTY (verif/Agent/v5_calc_seq_item.sv,6|40): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: uvm_field_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 151], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,SVNOTY (verif/Agent/v5_calc_seq_item.sv,6|40): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: uvm_field_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 151], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,NOTSTT (verif/Agent/v5_calc_seq_item.sv,6|40): expecting a statement [9(IEEE)].
+(`define macro: uvm_field_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 151], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,MISEXX (verif/Agent/v5_calc_seq_item.sv,6|40): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+(`define macro: uvm_field_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 151], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,NOTSTT (verif/Agent/v5_calc_seq_item.sv,6|40): expecting a statement [9(IEEE)].
+(`define macro: uvm_field_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 151], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,MISEXX (verif/Agent/v5_calc_seq_item.sv,6|40): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+(`define macro: uvm_field_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 151], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+   `uvm_object_utils_begin(calc_seq_item)
+                                        |
+xmvlog: *E,MISEXX (verif/Agent/v5_calc_seq_item.sv,6|40): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+(`define macro: uvm_field_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 151], `define macro: uvm_object_utils_begin [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], file: verif/Agent/v5_calc_seq_item.sv line 6)
+      super.new(name);
+          |
+xmvlog: *E,CLSSPX (verif/Agent/v5_calc_seq_item.sv,10|10): 'super' can only be used within a class scope that derives from a base class.
+file: verif/v5_calc_test_pkg.sv
+   `include "v5_calc_test_simple.sv"
+                                   |
+xmvlog: *E,COFILX (verif/v5_calc_test_pkg.sv,7|35): cannot open include file 'v5_calc_test_simple.sv'.
+   import calc_agent_pkg::*;
+                       |
+xmvlog: *E,NOPBIND (verif/v5_calc_test_pkg.sv,6|23): Package calc_agent_pkg could not be bound.
+	package worklib.calc_test_lib:sv
+		errors: 2, warnings: 0
+`endif;
+      |
+xmvlog: *W,UEXPSC (verif/v5_calc_test_pkg.sv,9|6): Ignored unexpected semicolon following SystemVerilog description keyword (endif).
+file: verif/v5_calc_test_simple.sv
+class test_simple extends uvm_test;
+                                 |
+xmvlog: *E,SVNOTY (verif/v5_calc_test_simple.sv,4|33): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+   `uvm_component_utils(test_simple)
+                                   |
+xmvlog: *E,SVNOTY (verif/v5_calc_test_simple.sv,6|35): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: m_uvm_component_registry_internal [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], file: verif/v5_calc_test_simple.sv line 6)
+   `uvm_component_utils(test_simple)
+                                   |
+xmvlog: *E,SVEXTK (verif/v5_calc_test_simple.sv,6|35): expecting a ';' (to terminate a type_declaration).
+(`define macro: m_uvm_component_registry_internal [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], file: verif/v5_calc_test_simple.sv line 6)
+   `uvm_component_utils(test_simple)
+                                   |
+xmvlog: *E,SVEXTK (verif/v5_calc_test_simple.sv,6|35): expecting a ';' (to terminate a type_declaration).
+(`define macro: m_uvm_component_registry_internal [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], file: verif/v5_calc_test_simple.sv line 6)
+   `uvm_component_utils(test_simple)
+                                   |
+xmvlog: *E,SVNOTY (verif/v5_calc_test_simple.sv,6|35): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: m_uvm_component_registry_internal [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], file: verif/v5_calc_test_simple.sv line 6)
+   `uvm_component_utils(test_simple)
+                                   |
+xmvlog: *E,EXPSMC (verif/v5_calc_test_simple.sv,6|35): expecting a semicolon (';') [10.3.1(IEEE)].
+(`define macro: m_uvm_component_registry_internal [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], file: verif/v5_calc_test_simple.sv line 6)
+   `uvm_component_utils(test_simple)
+                                   |
+xmvlog: *E,SVNOTY (verif/v5_calc_test_simple.sv,6|35): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: m_uvm_component_registry_internal [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], file: verif/v5_calc_test_simple.sv line 6)
+   `uvm_component_utils(test_simple)
+                                   |
+xmvlog: *E,EXPSMC (verif/v5_calc_test_simple.sv,6|35): expecting a semicolon (';') [10.3.1(IEEE)].
+(`define macro: m_uvm_component_registry_internal [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], file: verif/v5_calc_test_simple.sv line 6)
+   function new(string name = "test_simple", uvm_component parent = null);
+                                                         |
+xmvlog: *E,EXPRPA (verif/v5_calc_test_simple.sv,8|57): expecting a right parenthesis (')') [A.2.6(IEEE)].
+   function new(string name = "test_simple", uvm_component parent = null);
+                                                         |
+xmvlog: *E,NOIPRT (verif/v5_calc_test_simple.sv,8|57): Unrecognized declaration 'uvm_component' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+   function new(string name = "test_simple", uvm_component parent = null);
+                                                         |
+xmvlog: *E,NOTINF (verif/v5_calc_test_simple.sv,8|57): Interfaces are not allowed within tasks [SystemVerilog].
+   function new(string name = "test_simple", uvm_component parent = null);
+                                                                |
+xmvlog: *E,ILLPDL (verif/v5_calc_test_simple.sv,8|64): Mixing of ansi & non-ansi style port declaration is not legal.
+   function new(string name = "test_simple", uvm_component parent = null);
+                                                                  |
+xmvlog: *E,EXPSMC (verif/v5_calc_test_simple.sv,8|66): expecting a semicolon (';') [12.3.2(IEEE)].
+      super.new(name,parent);
+          |
+xmvlog: *E,EXPRPA (verif/v5_calc_test_simple.sv,9|10): expecting a right parenthesis (')') [A.2.6(IEEE)].
+   function void build_phase(uvm_phase phase);
+                                     |
+xmvlog: *E,SVNOTY (verif/v5_calc_test_simple.sv,12|37): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+   task main_phase(uvm_phase phase);
+                           |
+xmvlog: *E,SVNOTY (verif/v5_calc_test_simple.sv,17|27): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+file: verif/v5_calc_verif_top.sv
+   import calc_test_lib::*;
+                      |
+xmvlog: *E,NOPBIND (verif/v5_calc_verif_top.sv,6|22): Package calc_test_lib could not be bound.
+	module worklib.calc_verif_top:sv
+		errors: 1, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 36, warnings: 1
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	19.03-s013: Exiting on Apr 11, 2022 at 13:34:23 CEST  (total: 00:00:03)

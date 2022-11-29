@@ -1,0 +1,298 @@
+xrun(64): 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	19.03-s013: Started on Apr 29, 2022 at 11:30:50 CEST
+xrun
+	-f v6_run.f
+		-uvmhome /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2/
+		-uvm
+		+UVM_TESTNAME=test_simple
+		-sv
+		+incdir+./verif
+		-sv
+		+incdir+./verif/Agent
+		-sv
+		+incdir+./verif/Sequences
+		./dut/alu_input_stage.v
+		./dut/alu_output_stage.v
+		./dut/exdbin_mac.v
+		./dut/holdreg.v
+		./dut/mux_out.v
+		./dut/shifter.v
+		./dut/priority.v
+		./dut/calc_top.v
+		-sv
+		./verif/Agent/v6_calc_agent_pkg.sv
+		-sv
+		./verif/Sequences/v6_calc_seq_pkg.sv
+		-sv
+		./verif/v6_calc_test_pkg.sv
+		-sv
+		./verif/calc_if.sv
+		-sv
+		./verif/v6_calc_verif_top.sv
+		-access +rwc
+		-disable_sem2009
+		-nowarn MEMODR
+		-timescale 1ns/10ps
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2/
+file: ./dut/alu_input_stage.v
+	module worklib.alu_input_stage:v
+		errors: 0, warnings: 0
+file: ./dut/alu_output_stage.v
+	module worklib.alu_output_stage:v
+		errors: 0, warnings: 0
+file: ./dut/exdbin_mac.v
+	module worklib.exdbin_mac:v
+		errors: 0, warnings: 0
+file: ./dut/holdreg.v
+	module worklib.holdreg:v
+		errors: 0, warnings: 0
+file: ./dut/mux_out.v
+	module worklib.mux_out:v
+		errors: 0, warnings: 0
+file: ./dut/shifter.v
+	module worklib.shifter:v
+		errors: 0, warnings: 0
+file: ./dut/priority.v
+	module worklib.priority1:v
+		errors: 0, warnings: 0
+file: ./dut/calc_top.v
+	module worklib.calc_top:v
+		errors: 0, warnings: 0
+file: ./verif/Agent/v6_calc_agent_pkg.sv
+	package worklib.calc_agent_pkg:sv
+		errors: 0, warnings: 0
+file: ./verif/Sequences/v6_calc_seq_pkg.sv
+	package worklib.calc_seq_pkg:sv
+		errors: 0, warnings: 0
+file: ./verif/v6_calc_test_pkg.sv
+      seq_item1.randomize();
+                        |
+xmvlog: *W,FUNTSK (./verif/v6_test_base.sv,20|24): function called as a task without void'().
+(`include file: ./verif/v6_test_base.sv line 20, file: ./verif/v6_calc_test_pkg.sv line 12)
+	package worklib.calc_test_pkg:sv
+		errors: 0, warnings: 1
+	interface worklib.calc_if:sv
+		errors: 0, warnings: 0
+file: ./verif/calc_if.sv
+file: ./verif/v6_calc_verif_top.sv
+	module worklib.calc_verif_top:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		calc_agent_pkg
+		calc_seq_pkg
+		calc_test_pkg
+		calc_verif_top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.shifter:v <0x635ab913>
+			streams:  68, words: 475993
+		worklib.priority1:v <0x4af01fab>
+			streams:  29, words: 20981
+		worklib.alu_output_stage:v <0x0f47c7c8>
+			streams:   5, words:  2897
+		worklib.alu_output_stage:v <0x7222bdd8>
+			streams:   5, words:  2601
+		worklib.mux_out:v <0x4f79e6e7>
+			streams:   2, words:   770
+		worklib.alu_input_stage:v <0x10d79a85>
+			streams:   3, words:  1905
+		worklib.holdreg:v <0x559dd295>
+			streams:  10, words:  7391
+		worklib.exdbin_mac:v <0x01e8ffe3>
+			streams:  71, words: 28675
+		worklib.calc_top:v <0x557aa779>
+			streams:   1, words:   231
+		worklib.calc_verif_top:sv <0x1956df5e>
+			streams:  23, words:  4913
+		worklib.uvm_pkg:sv <0x74e55147>
+			streams:   8, words:  8794
+		worklib.uvm_pkg:sv <0x0ec79e2c>
+			streams:   8, words:  8419
+		worklib.uvm_pkg:sv <0x75bbae83>
+			streams:   7, words:  7778
+		worklib.uvm_pkg:sv <0x43977cca>
+			streams:  29, words: 30420
+		worklib.uvm_pkg:sv <0x07bf5ba3>
+			streams:   7, words:  1918
+		worklib.uvm_pkg:sv <0x588860b6>
+			streams:  22, words: 60427
+		worklib.uvm_pkg:sv <0x76f8104d>
+			streams:   7, words:  1918
+		worklib.uvm_pkg:sv <0x561d9f91>
+			streams:   7, words:  3200
+		worklib.uvm_pkg:sv <0x69801e18>
+			streams:   7, words:  3200
+		worklib.uvm_pkg:sv <0x1883ddb5>
+			streams:  18, words: 18360
+		worklib.uvm_pkg:sv <0x5088c68d>
+			streams:  28, words: 33133
+		worklib.uvm_pkg:sv <0x040296bb>
+			streams:  27, words: 31450
+		worklib.uvm_pkg:sv <0x646912bd>
+			streams:  23, words: 30392
+		worklib.uvm_pkg:sv <0x474e655a>
+			streams:  17, words: 16784
+		worklib.uvm_pkg:sv <0x4a58f8e2>
+			streams:  26, words: 41159
+		worklib.uvm_pkg:sv <0x4a64ba2e>
+			streams:   7, words:  2422
+		worklib.uvm_pkg:sv <0x5cfdcb91>
+			streams:  16, words: 21296
+		worklib.uvm_pkg:sv <0x2eeecf73>
+			streams:  26, words: 37666
+		worklib.uvm_pkg:sv <0x2b61ea48>
+			streams:  25, words: 65724
+		worklib.uvm_pkg:sv <0x38dc4170>
+			streams:  27, words: 41220
+		worklib.uvm_pkg:sv <0x6258d21d>
+			streams:  26, words: 57508
+		worklib.uvm_pkg:sv <0x6319f5e5>
+			streams:  27, words: 44470
+		worklib.uvm_pkg:sv <0x22a75228>
+			streams:  25, words: 65081
+		worklib.uvm_pkg:sv <0x756f1c4c>
+			streams:  27, words: 46634
+		worklib.uvm_pkg:sv <0x6b058bc4>
+			streams:  25, words: 70878
+		worklib.uvm_pkg:sv <0x293417d4>
+			streams:  27, words: 52004
+		worklib.uvm_pkg:sv <0x0205f997>
+			streams:  25, words: 62494
+		worklib.uvm_pkg:sv <0x07ee33e7>
+			streams:  25, words: 65661
+		worklib.uvm_pkg:sv <0x5ac2641a>
+			streams:  27, words: 43366
+		worklib.uvm_pkg:sv <0x42e2e3c9>
+			streams:  25, words: 62053
+		worklib.uvm_pkg:sv <0x27d861fa>
+			streams:  29, words: 109706
+		worklib.uvm_pkg:sv <0x1d1ee55b>
+			streams:  72, words: 152317
+		worklib.cdns_uvm_pkg:sv <0x33d177b2>
+			streams:   9, words:  5253
+		worklib.cdns_uvm_pkg:sv <0x20a2fa54>
+			streams:  10, words:  9337
+		worklib.uvm_pkg:sv <0x23446b1b>
+			streams:  24, words: 26167
+		worklib.uvm_pkg:sv <0x6296762e>
+			streams:  23, words: 24462
+		worklib.calc_test_pkg:sv <0x2d417c80>
+			streams:  24, words: 26950
+		worklib.uvm_pkg:sv <0x44193caa>
+			streams:   7, words:  3200
+		worklib.uvm_pkg:sv <0x1758c0a0>
+			streams:  47, words: 44693
+		worklib.uvm_pkg:sv <0x299e4f0b>
+			streams:  25, words: 29793
+		worklib.uvm_pkg:sv <0x2cba1b61>
+			streams:  37, words: 47860
+		worklib.uvm_pkg:sv <0x3dab38c2>
+			streams: 314, words: 445929
+		worklib.uvm_pkg:sv <0x157a1e68>
+			streams:  24, words: 27368
+		worklib.calc_test_pkg:sv <0x2ac0a029>
+			streams:   0, words:     0
+		worklib.calc_seq_pkg:sv <0x1d3bb7be>
+			streams:   0, words:     0
+		worklib.calc_agent_pkg:sv <0x505e7b92>
+			streams:   0, words:     0
+		worklib.cdns_uvm_pkg:sv <0x7344c6e3>
+			streams: 232, words: 466173
+		worklib.cdns_uvmapi:svp <0x1988a6a5>
+			streams:  27, words: 36788
+		worklib.cdns_assert2uvm_pkg:sv <0x0ee56487>
+			streams:   3, words:  2534
+		worklib.uvm_pkg:sv <0x753b3e2c>
+			streams: 5569, words: 10863639
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                      17       9
+		Interfaces:                    1       1
+		Verilog packages:              7       7
+		Registers:                 16164   11663
+		Scalar wires:               1183       -
+		Expanded wires:              396      14
+		Vectored wires:               72       -
+		Named events:                  4      12
+		Always blocks:                11       5
+		Initial blocks:              322     164
+		Parallel blocks:              36      31
+		Cont. assignments:           167    1149
+		Pseudo assignments:           18      18
+		Assertions:                    4       4
+		SV Class declarations:       231     347
+		SV Class specializations:    434     434
+		Simulation timescale:       10ps
+	Writing initial simulation snapshot: worklib.calc_verif_top:sv
+Loading snapshot worklib.calc_verif_top:sv .................... Done
+xmsim: *W,XCLGNOPTM: The SystemVerilog constraint solver Xceligen options 'seed_only_rand and process_alternate_rng and ignore_worklib_name' are not specified and will default to 0. The recommended value for each of them is 1 which will become the default in a future release.
+SVSEED default: 1
+xmsim: *W,RNDXCELON: Xceligen, the new SystemVerilog constraint solver is used. Disabling Xceligen and using the legacy constraint solver is possible with "xrun/xmsim -xceligen on=0 ...".
+xcelium> source /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/xcelium/files/xmsimrc
+xcelium> source /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2//additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+UVM_INFO /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2//sv/src/base/uvm_root.svh(412) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+CDNS-UVM-1.2 (19.03-s013)
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test test_simple...
+------------------------------------
+Name      Type           Size  Value
+------------------------------------
+seq_item  calc_seq_item  -     @2146
+------------------------------------
+SDI/Verilog Transaction Recording Facility Version 19.03-s013
+UVM_INFO /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2//sv/src/base/uvm_report_catcher.svh(705) @ 0: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2//sv/src/base/uvm_report_server.svh(847) @ 0: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    3
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+
+Simulation complete via $finish(1) at time 0 FS + 240
+/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh:543     $finish;
+xcelium> exit
+TOOL:	xrun(64)	19.03-s013: Exiting on Apr 29, 2022 at 11:31:10 CEST  (total: 00:00:20)

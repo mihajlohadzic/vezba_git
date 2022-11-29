@@ -1,0 +1,80 @@
+*** Message Type: info ***
+When: Mon May 30 12:43:30 CEST 2022
+SimVision started.
+Version: TOOL:  simvision(64)   19.03-s013
+User: mihajlo.hadzic
+Host: ws2.lab107.kel.net
+Platform: Linux/x86_64/3.10.0-1160.el7.x86_64
+Started: Mon May 30 12:43:30 CEST 2022
+Command: /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:ws2.lab107.kel.net:45909 -64BIT -nocopyright
+Work Directory: /nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7
+ 
+*** Message Type: info ***
+When: Mon May 30 12:43:31 CEST 2022
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Mon May 30 12:43:32 CEST 2022
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Mon May 30 12:43:36 CEST 2022
+Connect to Simulator
+      Design: worklib.calc_verif_top:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:        xmsim(64)       19.03-s013
+        User: mihajlo.hadzic
+        Host: ws2.lab107.kel.net
+Time Started: Mon May 30 12:43:28 CEST 2022
+  Process ID: 10706
+   Directory: /nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7
+     Command: xrun -f v7_run.f -gui
+
+ 
+*** Message Type: info ***
+When: Mon May 30 12:43:37 CEST 2022
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Mon May 30 12:43:50 CEST 2022
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Mon May 30 12:44:35 CEST 2022
+Delete waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Mon May 30 12:44:40 CEST 2022
+Create waveform window: "Waveform 2"
+ 
+*** Message Type: info ***
+When: Mon May 30 12:44:44 CEST 2022
+Delete waveform window: "Waveform 2"
+ 
+*** Message Type: info ***
+When: Mon May 30 12:49:02 CEST 2022
+Create waveform window: "Waveform 3"
+ 
+*** Message Type: info ***
+When: Mon May 30 12:59:39 CEST 2022
+Delete browser window: "Design Browser 1"
+ 
+*** Message Type: error ***
+When: Mon May 30 12:59:39 CEST 2022
+invalid command name ".watchList0.bottom.statusbar.indicator-autosave.autosave"
+    while executing
+".watchList0.bottom.statusbar.indicator-autosave.autosave configure -image image269"
+    ("after" script)
+ 
+*** Message Type: error ***
+When: Mon May 30 12:59:39 CEST 2022
+invalid command name ".watchList0.bottom.statusbar.indicator-autosave.autosave"
+    while executing
+".watchList0.bottom.statusbar.indicator-autosave.autosave configure -image image269"
+    ("after" script)
+ 
+*** Message Type: info ***
+When: Mon May 30 12:59:45 CEST 2022
+SimVision Exit.
+ 

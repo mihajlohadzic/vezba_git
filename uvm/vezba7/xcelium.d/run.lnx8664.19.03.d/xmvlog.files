@@ -1,0 +1,17 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/dut/alu_input_stage.v
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/dut/alu_output_stage.v
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/dut/exdbin_mac.v
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/dut/holdreg.v
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/dut/mux_out.v
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/dut/shifter.v
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/dut/priority.v
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/dut/calc_top.v
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/verif/Agent/v7_calc_agent_pkg.sv
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/verif/Sequences/v7_calc_seq_pkg.sv
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/verif/v7_calc_test_pkg.sv
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/verif/calc_if.sv
+/nethome/mihajlo.hadzic/Desktop/funkcionalna_verifikacija/uvm/vezba7/verif/v7_calc_verif_top.sv

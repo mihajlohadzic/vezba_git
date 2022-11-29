@@ -1,0 +1,110 @@
+xrun(64): 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	19.03-s013: Started on May 23, 2022 at 13:10:43 CEST
+xrun
+	-compile
+	v7_calc_monitor.sv
+file: v7_calc_monitor.sv
+class calc_monitor extends uvm_monitor;
+                                     |
+xmvlog: *E,SVNOTY (v7_calc_monitor.sv,1|37): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+   uvm_analysis_port #(calc_seq_item) item_collected_port;
+                   |
+xmvlog: *E,EXPENC (v7_calc_monitor.sv,7|19): Expecting the keyword 'endclass'.
+   `uvm_component_utils_begin(calc_monitor)
+                            |
+xmvlog: *E,NOTDIR (v7_calc_monitor.sv,9|28): `uvm_component_utils_begin: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+      `uvm_field_int(checks_enable, UVM_DEFAULT)
+                   |
+xmvlog: *E,NOTDIR (v7_calc_monitor.sv,10|19): `uvm_field_int: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+      `uvm_field_int(coverage_enable, UVM_DEFAULT)
+                   |
+xmvlog: *E,NOTDIR (v7_calc_monitor.sv,11|19): `uvm_field_int: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+   `uvm_component_utils_end
+                          |
+xmvlog: *E,NOTDIR (v7_calc_monitor.sv,12|26): `uvm_component_utils_end: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+   calc_seq_item curr_it;
+               |
+xmvlog: *E,NOIPRT (v7_calc_monitor.sv,18|15): Unrecognized declaration 'calc_seq_item' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+   calc_seq_item curr_it;
+               |
+xmvlog: *E,NCUITEM (v7_calc_monitor.sv,18|15): Not a valid compilation unit/global item: 'interface_declaration' [SystemVerilog].
+   function new(string name = "calc_monitor", uvm_component parent = null);
+              |
+xmvlog: *E,NEWOIC (v7_calc_monitor.sv,23|14): The class constructor method 'new' is only allowed within a class declaration.
+   function new(string name = "calc_monitor", uvm_component parent = null);
+                                                          |
+xmvlog: *E,EXPRPA (v7_calc_monitor.sv,23|58): expecting a right parenthesis (')') [A.2.6(IEEE)].
+   function new(string name = "calc_monitor", uvm_component parent = null);
+                                                          |
+xmvlog: *E,NOIPRT (v7_calc_monitor.sv,23|58): Unrecognized declaration 'uvm_component' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+   function new(string name = "calc_monitor", uvm_component parent = null);
+                                                          |
+xmvlog: *E,NOTINF (v7_calc_monitor.sv,23|58): Interfaces are not allowed within tasks [SystemVerilog].
+   function new(string name = "calc_monitor", uvm_component parent = null);
+                                                                 |
+xmvlog: *E,ILLPDL (v7_calc_monitor.sv,23|65): Mixing of ansi & non-ansi style port declaration is not legal.
+   function new(string name = "calc_monitor", uvm_component parent = null);
+                                                                   |
+xmvlog: *E,EXPSMC (v7_calc_monitor.sv,23|67): expecting a semicolon (';') [12.3.2(IEEE)].
+      super.new(name,parent);
+          |
+xmvlog: *E,EXPRPA (v7_calc_monitor.sv,24|10): expecting a right parenthesis (')') [A.2.6(IEEE)].
+        `uvm_fatal("NOVIF",{"virtual interface must be set:",get_full_name(),".vif"})
+                 |
+xmvlog: *E,NOTDIR (v7_calc_monitor.sv,26|17): `uvm_fatal: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+        `uvm_fatal("NOVIF",{"virtual interface must be set:",get_full_name(),".vif"})
+                  |
+xmvlog: *E,NOTSTT (v7_calc_monitor.sv,26|18): expecting a statement [9(IEEE)].
+        `uvm_fatal("NOVIF",{"virtual interface must be set:",get_full_name(),".vif"})
+                          |
+xmvlog: *E,EXPRPA (v7_calc_monitor.sv,26|26): expecting a right parenthesis (')') [9.4(IEEE)].
+        `uvm_fatal("NOVIF",{"virtual interface must be set:",get_full_name(),".vif"})
+                                                           |
+xmvlog: *E,NOTLVL (v7_calc_monitor.sv,26|59): illegal lvalue syntax [9.2(IEEE)].
+        `uvm_fatal("NOVIF",{"virtual interface must be set:",get_full_name(),".vif"})
+                                                                         |
+xmvlog: *E,NOTLVL (v7_calc_monitor.sv,26|73): illegal lvalue syntax [9.2(IEEE)].
+        `uvm_fatal("NOVIF",{"virtual interface must be set:",get_full_name(),".vif"})
+                                                                                  |
+xmvlog: *E,NOTLVL (v7_calc_monitor.sv,26|82): illegal lvalue syntax [9.2(IEEE)].
+        `uvm_fatal("NOVIF",{"virtual interface must be set:",get_full_name(),".vif"})
+                                                                                    |
+xmvlog: *E,MISEXX (v7_calc_monitor.sv,26|84): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+   function void connect_phase(uvm_phase phase);
+                                       |
+xmvlog: *E,SVNOTY (v7_calc_monitor.sv,29|39): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+   task main_phase(uvm_phase phase);
+                           |
+xmvlog: *E,SVNOTY (v7_calc_monitor.sv,34|27): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+			`uvm_info(get_type_name(), "Provera uspesna exp_output = out_data1 ", UVM_HIGH);
+			        |
+xmvlog: *E,NOTDIR (v7_calc_monitor.sv,55|11): `uvm_info: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+			`uvm_info(get_type_name(), "Provera uspesna exp_output = out_data1 ", UVM_HIGH);
+			         |
+xmvlog: *E,NOTSTT (v7_calc_monitor.sv,55|12): expecting a statement [9(IEEE)].
+			`uvm_info(get_type_name(), "Provera uspesna exp_output = out_data1 ", UVM_HIGH);
+			                         |
+xmvlog: *E,EXPRPA (v7_calc_monitor.sv,55|28): expecting a right parenthesis (')') [9.4(IEEE)].
+			`uvm_info(get_type_name(), "Provera uspesna exp_output = out_data1 ", UVM_HIGH);
+			                                                                              |
+xmvlog: *E,MISEXX (v7_calc_monitor.sv,55|81): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+		else
+		   |
+xmvlog: *E,NOTSTT (v7_calc_monitor.sv,56|5): expecting a statement [9(IEEE)].
+			`uvm_error(get_type_name(), "Greska");		
+			         |
+xmvlog: *E,NOTDIR (v7_calc_monitor.sv,57|12): `uvm_error: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+			`uvm_error(get_type_name(), "Greska");		
+			                          |
+xmvlog: *E,EXPSMC (v7_calc_monitor.sv,57|29): expecting a semicolon (';') [10.2.2][10.2(IEEE)].
+   endtask : main_phase
+         |
+xmvlog: *E,NOTSTT (v7_calc_monitor.sv,63|9): expecting a statement [9(IEEE)].
+endclass : calc_monitor
+       |
+xmvlog: *E,MPANDC (v7_calc_monitor.sv,65|7): expecting the keyword 'module', 'macromodule', 'primitive', 'connectmodule','connect', 'discipline' or 'nature' [A.1].
+xmvlog: *W,NOTOPL: no top-level unit found, must have recursive instances.
+	Total errors/warnings found outside modules and primitives:
+		errors: 33, warnings: 1
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	19.03-s013: Exiting on May 23, 2022 at 13:10:45 CEST  (total: 00:00:02)

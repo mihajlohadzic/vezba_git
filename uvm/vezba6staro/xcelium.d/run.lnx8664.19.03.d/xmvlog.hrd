@@ -1,0 +1,32 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-sv
+-INCDIR
+./verif
+-sv
+-INCDIR
+./verif/Agent
+-sv
+-INCDIR
+./verif/Sequences
+-sv
+-sv
+-sv
+-sv
+-sv
+-sv
+-sv
+-sv
+-sv
+-sv
+-sv
+-sv
+-sv
+-I_INCDIR
+/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+-I_INCDIR
+/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/additions/sv

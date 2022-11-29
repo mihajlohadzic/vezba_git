@@ -1,0 +1,112 @@
+xrun(64): 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	19.03-s013: Started on Apr 27, 2022 at 13:21:00 CEST
+xrun
+	-f build_file.f
+		-sv
+		+incdir+./verif
+		-sv
+		+incdir+./verif/Agent
+		-sv
+		+incdir+./verif/Sequences
+		./dut/alu_input_stage.v
+		./dut/alu_output_stage.v
+		./dut/exdbin_mac.v
+		./dut/holdreg.v
+		./dut/mux_out.v
+		./dut/shifter.v
+		./dut/priority.v
+		./dut/calc_top.v
+		-sv
+		./verif/Agent/v6_calc_agent_pkg.sv
+		-sv
+		./verif/Agent/v6_calc_seq_item.sv
+		-sv
+		./verif/Agent/v6_calc_driver.sv
+		-sv
+		./verif/Agent/v6_calc_sequencer.sv
+		-sv
+		./verif/Sequences/v6_calc_seq_pkg.sv
+		-sv
+		./verif/Sequences/v6_calc_base_seq.sv
+		-sv
+		./verif/Sequences/v6_calc_simple_seq.sv
+		-sv
+		./verif/calc_if.sv
+		-sv
+		./verif/v6_calc_test_pkg.sv
+		-sv
+		./verif/v6_test_simple.sv
+		-sv
+		./verif/v6_calc_verif_top.sv
+		-sv
+		./verif/v6_test_simple_2.sv
+		-sv
+		./verif/v6_test_base.sv
+		-uvm
+		+/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2/sv/src
+		+UVM_TESTNAME=test_simple
+		-access +rwc
+		-disable_sem2009
+		-nowarn MEMODR
+		-timescale 1ns/10ps
+
+   User defined plus("+") options:
+	+/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.2/sv/src
+
+Loading snapshot worklib.calc_verif_top:sv .................... Done
+xmsim: *W,XCLGNOPTM: The SystemVerilog constraint solver Xceligen options 'seed_only_rand and process_alternate_rng and ignore_worklib_name' are not specified and will default to 0. The recommended value for each of them is 1 which will become the default in a future release.
+SVSEED default: 1
+xmsim: *W,RNDXCELON: Xceligen, the new SystemVerilog constraint solver is used. Disabling Xceligen and using the legacy constraint solver is possible with "xrun/xmsim -xceligen on=0 ...".
+xcelium> source /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/xcelium/files/xmsimrc
+xcelium> source /eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (19.03-s013)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test test_simple...
+------------------------------------
+Name      Type           Size  Value
+------------------------------------
+seq_item  calc_seq_item  -     @2851
+------------------------------------
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    1
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+Simulation complete via $finish(1) at time 0 FS + 188
+/eda/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+xcelium> exit
+TOOL:	xrun(64)	19.03-s013: Exiting on Apr 27, 2022 at 13:21:05 CEST  (total: 00:00:05)
